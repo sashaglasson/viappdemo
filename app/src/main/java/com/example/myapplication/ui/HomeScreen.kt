@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,9 +12,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.myapplication.R
 
 @Composable
 fun HomeScreen(

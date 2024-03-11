@@ -1,6 +1,5 @@
-package com.example.myapplication
+package com.example.myapplication.ui
 
-import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -15,9 +14,6 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -84,8 +80,7 @@ fun AnimalApp(
         ){
             composable(route = AnimalScreens.Login.name){
                 LoginScreen(
-                    navController = navController,
-                    onLoginButtonClicked = {navController.navigate(AnimalScreens.HomeScreen.name)}
+                    navController = navController
                 )
             }
             composable(route = AnimalScreens.HomeScreen.name){
